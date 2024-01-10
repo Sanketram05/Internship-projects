@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="temp-con">
+            <h2 class="title">Temperature Convertor</h2>
+
+            <div class="result">
+                <span class="result-heading">Result (Celsius)</span>
+                <h2 class="celsius-value" id="celsius">1</h2>
+              </div>
+  
+              <div class="degree-type">
+
+                <div class="degree-field">
+                  <label for="degree">Degrees</label>
+                  <input type="number" name="degree" id="degree" />
+                </div>
+  
+                <div class="temp-field">
+                  <label for="temp-type">Type</label>
+                  <select name="temperatures" id="temp-type" autocomplete="on">
+                    <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>
+                    <option id="kelvin" value="kelvin">Kelvin</option>
+                  </select>
+                </div>
+
+              </div>
+              <button id="convert-btn">Convert</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
